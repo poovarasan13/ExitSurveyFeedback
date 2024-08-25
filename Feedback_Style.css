@@ -1,0 +1,228 @@
+html,body {
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 15px;
+    background-position: 0 0;
+    background: #ffffff;
+    background-image: url('Background\ Pic\ 1.avif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, .5);
+}
+.rb-box{
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 1.3em;
+    background-color: rgba(255, 255, 255, 0.872);
+    backdrop-filter: blur(40px);
+    border-radius: .75em;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5), 0 0px 5px rgba(243, 49, 128, .15),
+        0 0px 4px rgba(0, 0, 0, .35),
+        0 5px 20px rgba(0, 0, 0, 0.25),
+        0 15px 50px rgba(10, 7, 8, 0.75),
+        inset 0 0 15px rgba(15, 15, 15, 0.05);
+}
+
+/* Custom Radio Button */
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color:black;
+}
+
+.rb {
+    padding: 1em 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.29);
+    border-radius: .3em;
+}
+
+.rb-tab {
+    display: inline-block;
+    position: relative;
+    width: 13%;
+    margin: 0 1%;
+}
+
+/* .rb-txt.zoom-in {
+    transform: translate(-10%, -10%) scale(1.7);
+} */
+
+
+/* Submit Button */
+
+.button-box {
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5em;
+}
+
+button {
+    display: inline-block;
+    width: 80%;
+    max-width: 220px;
+    padding: 1em;
+    font-size: 1.2em;
+    color: #D42D78;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .15em;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 5em;
+    box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+    transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+    color: #6f6f6f;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+    .rb-tab {
+        width: 40%;
+        margin: 0 2%;
+    }
+}
+
+h1{
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px gray;
+}
+
+/* New */
+
+#radios label {
+  position: relative;
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+h3{
+    font-size: 40px;
+    color: rgb(107, 97, 97);
+    margin: 0.2rem;
+}
+
+input[type="radio"] + h3 {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+input[class="super-happy"]:hover + h3,
+input[class="super-happy"]:checked + h3,
+input[class="super-happy"]:focus + h3,
+input[class="happy"]:hover + h3,
+input[class="happy"]:checked + h3,
+input[class="happy"]:focus + h3,
+input[class="neutral"]:hover + h3,
+input[class="neutral"]:checked + h3,
+input[class="neutral"]:focus + h3,
+input[class="sad"]:hover + h3,
+input[class="sad"]:checked + h3,
+input[class="sad"]:focus + h3,
+input[class="super-sad"]:hover + h3,
+input[class="super-sad"]:checked + h3,
+input[class="super-sad"]:focus + h3 {
+    color: rgb(235, 209, 18);
+}
+
+
+ul li{
+    color:black;
+    display: inline;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.yes input{
+    opacity: 1;
+    display: inline;
+    height: 15px; 
+    width: 15px;    
+}
+
+.yes label{
+    color: black;
+    display: inline;
+    margin-top: 0px;
+    margin-left: 3%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.rb label{
+    color: rgb(9, 59, 75);
+    margin-top: 15px;
+    margin-left: 3%;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 80px;
+}
+
+.comments{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.507);
+    width: 90%;
+    max-width: 800px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border-bottom: 5px grey;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.nameip{
+    background-color: rgba(255, 255, 255, 0.507);
+    width: 30%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    border-bottom: 5px grey;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Rating */
+
+.rb-star {
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rb-star:hover,
+.rb-star.checked {
+    color: rgb(235, 209, 18);
+}
+
+/* .rb-star.zoom-in {
+    transform: translate(10%, 10%) scale(1.7);
+} */

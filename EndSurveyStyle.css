@@ -1,0 +1,111 @@
+/*  End Survey Page  */
+
+body{
+    background-position: 0 0;
+    background: radial-gradient( #f3f3dc 0%, #a1a298 100%);
+    background-attachment: fixed;
+}
+
+.login_logo{
+    width: 400px;
+ height: 100px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+#table_title{
+    background: radial-gradient( #33ccff 0%, #043389 100%);
+    color: #000000;
+}
+
+.end_survey_table{
+    border-radius: 10px;
+    text-align: center;
+}
+.end_survey_table th,td{
+    width: 50px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    
+}
+.end_survey_table tr:nth-child(even) {
+    background-color: #ebebeb;
+}
+.end_survey_table tr:nth-child(odd) {
+    background-color: #cde1ea;
+}
+
+.topic{
+    border-radius: 10px;
+}
+.topic th{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    
+    
+}
+.print-button {
+    font-size: 16px;
+    display: block;
+    font-weight:bold;
+    background: radial-gradient(white, wheat);
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.print-button1 {
+    font-size: 16px;
+    display: block;
+    font-weight:bold;
+    background: radial-gradient(white, wheat);
+    width: 150px;
+    /* text-align: center; */
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.print-button:hover,
+.print-button:active {
+    box-shadow: 0 0 8px rgb(84, 149, 224);
+}
+.print-button1:hover,
+.print-button1:active {
+    box-shadow: 0 0 8px rgb(84, 149, 224);
+}
+
+
+ 
+   #hide {
+    display: none;
+    text-align: center;
+}
+
+@media print {
+    
+    #hiddePrint {
+        display: none;
+    }
+
+   
+    #hide  {
+        display: table; 
+        border-collapse: collapse;
+        width: 100%;
+       
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+}
