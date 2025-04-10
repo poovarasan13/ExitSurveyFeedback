@@ -1,1 +1,1 @@
-Live Hosting:http://121.200.48.27:8081/ExitSurvey/LoginPage.php
+Live Hosting:http://172.16.100.35:8081/ExitSurvey/LoginPage.php
